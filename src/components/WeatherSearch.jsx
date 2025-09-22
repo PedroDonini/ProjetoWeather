@@ -1,13 +1,13 @@
-import { useState } from "react" ;
+import { useState, useContext } from "react" ;
+import { WeatherContext } from "../contexts/WeatherContext" ;
 
 export default function WeatherSearch(){
     const [city, setCity] = useState("") ;
+    const {fetchWeather} = useContext(WeatherContext) ;
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        if(city.trim()){
-            // TODO: Lógica para consumir os dados da API -> Contexto para retornar informações de clima da cidade buscada
-        }
+        if(city.trim()) fetchWeather(city) ;
     };
 
     return (
