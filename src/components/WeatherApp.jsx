@@ -1,5 +1,6 @@
 import WeatherSearch from "./WeatherSearch";
 import WeatherDisplay from "./WeatherDisplay";
+import WeatherChart from "./WeatherChart";
 
 export default function WeatherApp(){
     return (
@@ -7,6 +8,7 @@ export default function WeatherApp(){
             <h1>Weather App</h1>
             <WeatherSearch />
             <WeatherDisplay />
+            <WeatherChart />
         </div>
     );
 }
