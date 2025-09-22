@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #74ebd5, #acb6e5); /* degrade azul suave */
+  color: #2c3e50;
+  line-height: 1.6;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Container geral */
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #1b2631;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1rem;
+  color: #34495e;
+}
+
+/* Formulário de busca */
+form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+input[type="text"] {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #1abc9c;
+  box-shadow: 0 0 5px #1abc9c;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #1abc9c;
+}
+
+p {
+  text-align: center;
+  font-size: 1rem;
+}
+
+p[style*="color:red"] {
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+/* Display do clima */
+.weather-display {
+  text-align: center;
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+.weather-display h2 {
+  font-size: 1.8rem;
+  color: #2980b9;
+  margin-bottom: 10px;
+}
+
+.weather-display p {
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+/* Gráfico */
+.weather-chart-container {
+  background: rgba(255,255,255,0.85);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  input[type="text"] {
+    width: 150px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .weather-display h2 {
+    font-size: 1.5rem;
+  }
+}

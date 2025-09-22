@@ -11,9 +11,9 @@ export default function WeatherDisplay(){
     const {city, list} = state.weather ;
 
     return (
-        <div>
+        <div className="weather-display">
             <h2>Clima na cidade: {city.name}</h2>
-            <p>Temperatura atual: {list[0].main.temp} graus Celsius</p>
+            <p>Temperatura atual: {list[0].main.temp}°C</p>
             <p>Descrição: {list[0].weather[0].description}</p>
         </div>
     );
