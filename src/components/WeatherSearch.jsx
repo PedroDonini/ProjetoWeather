@@ -8,7 +8,7 @@ export default function WeatherSearch(){
         if(city.trim()){
             // TODO: Lógica para consumir os dados da API -> Contexto para retornar informações de clima da cidade buscada
         }
-    }  
+    };
 
     return (
         <form onSubmit={handleSubmit}>
